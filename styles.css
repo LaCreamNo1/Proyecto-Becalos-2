@@ -1,0 +1,60 @@
+/* Paleta principal */
+:root {
+  --morado: #6a0dad;
+  --morado-oscuro: #4b0082;
+  --dorado: #ffd700;
+  --dorado-suave: #f5e1a4;
+  --blanco: #ffffff;
+}
+
+/* Estilo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--morado-oscuro);
+  color: var(--blanco);
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+  color: var(--dorado);
+  text-shadow: 2px 2px var(--morado);
+}
+
+/* Botones */
+button {
+  background: var(--morado);
+  color: var(--dorado);
+  border: 2px solid var(--dorado);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--dorado);
+  color: var(--morado-oscuro);
+}
+
+/* Tarjetas */
+.card {
+  background: var(--morado);
+  border: 1px solid var(--dorado);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+}
+
+/* Links */
+a {
+  color: var(--dorado);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--dorado-suave);
+  text-decoration: underline;
+}

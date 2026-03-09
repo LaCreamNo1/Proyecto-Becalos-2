@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acerca.html">Acerca</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Contacto</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="card">
+            <h2>Ponte en contacto</h2>
+            <p>
+                Si deseas más información sobre este proyecto o quieres dejarme un mensaje, 
+                completa el siguiente formulario. 
+            </p>
+            <form action="#" method="post" class="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Información adicional</h2>
+            <p>
+                Este formulario es parte de la práctica del curso 
+                <strong>Bécalos – Introducción a la Programación</strong>. 
+                No envía datos reales, pero simula cómo funcionaría un sistema de contacto en un sitio web.
+            </p>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Mi sitio web. Todos los derechos reservados.</p>
+        <p><a href="contacto.html">Contacto</a> | <a href="#">Aviso legal</a></p>
+    </footer>
+</body>
+</html>

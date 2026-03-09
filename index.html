@@ -8,30 +8,57 @@
 <body>
     <!-- Encabezado principal -->
     <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
         <h1>Bienvenido a mi sitio web</h1>
         <p>Un espacio en construcción con estilo morado y dorado.</p>
     </header>
 
     <!-- Sección de contenido -->
     <main>
-        <section class="card">
+        <section id="sobre" class="card">
             <h2>Sobre este proyecto</h2>
             <p>Estoy creando una página web con un diseño elegante y moderno. 
                La paleta morada y dorada le da un aire sofisticado.</p>
             <button>Leer más</button>
         </section>
 
-        <section class="card">
+        <section id="noticias" class="card">
             <h2>Noticias</h2>
             <p>Pronto encontrarás aquí actualizaciones y novedades.</p>
             <button>Suscribirse</button>
         </section>
+
+        <section id="galeria" class="card">
+            <h2>Galería</h2>
+            <p>Una colección de imágenes que reflejan el estilo del sitio.</p>
+            <div class="gallery">
+                <img src="img1.jpg" alt="Imagen elegante 1">
+                <img src="img2.jpg" alt="Imagen elegante 2">
+                <img src="img3.jpg" alt="Imagen elegante 3">
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Enlaces útiles</h3>
+            <ul>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Foro</a></li>
+            </ul>
+        </aside>
     </main>
 
     <!-- Pie de página -->
     <footer>
         <p>&copy; 2026 Mi sitio web. Todos los derechos reservados.</p>
-        <p><a href="#">Contacto</a> | <a href="#">Aviso legal</a></p>
+        <p><a href="#contacto">Contacto</a> | <a href="#">Aviso legal</a></p>
     </footer>
 </body>
 </html>

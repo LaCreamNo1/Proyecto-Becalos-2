@@ -58,3 +58,92 @@ a:hover {
   color: var(--dorado-suave);
   text-decoration: underline;
 }
+
+/* Contenedor principal con grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #4b0082;
+}
+
+/* Tarjetas */
+.card {
+    background-color: #ad2bcd;
+    border: 2px solid #6a0dad; /* morado */
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Botones */
+button {
+    background-color: #d4af37; /* dorado */
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #b8860b;
+}
+
+/* Galería interna con grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Formulario con grid */
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* columna para etiquetas y otra más amplia para inputs */
+    gap: 1rem 1.5rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Etiquetas alineadas a la derecha */
+.contact-form label {
+    text-align: right;
+    font-weight: bold;
+    color: #6a0dad; /* morado */
+}
+
+/* Inputs y textarea ocupan toda la columna */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+/* Botón ocupa las dos columnas */
+.contact-form button {
+    grid-column: 1 / span 2;
+    background-color: #d4af37; /* dorado */
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.contact-form button:hover {
+    background-color: #b8860b;
+}

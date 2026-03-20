@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <title>IDEONIX</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/images/icono.png" type="image/x-icon">
+    <link rel="icon" href="images/icono.png" type="image/x-icon">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <header class="navbar">
     <div class="logo">IDEONIX</div>
-    <nav>
+
+    <button class="menu-toggle" id="menu-toggle">
+        ☰
+    </button>
+
+    <nav id="nav-menu">
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#proyectos">Proyectos</a></li>
+            <li><a href="index.html#servicios">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
+    <img src="images/icono.png" class="icon-main">
     <h1>IDEONIX</h1>
     <h2>Donde la innovación toma forma</h2>
     <p>Soluciones en ingeniería, diseño industrial, software y automatización.</p>
@@ -36,6 +42,11 @@
 <!-- CONTENIDO -->
 <main>
 
+    <section id="servicios" class="info">
+        <h2>IDEONIX – Donde la innovación toma forma</h2>
+        <p>Soluciones en ingeniería, diseño industrial, software y automatización al servicio de la industria y la educación.</p>
+    </section>
+    
     <section id="servicios" class="card">
         <h2>Servicios</h2>
         <p>Desarrollo de software, diseño 3D, automatización con Arduino y soluciones tecnológicas.</p>

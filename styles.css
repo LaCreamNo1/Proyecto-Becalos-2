@@ -48,6 +48,56 @@ body {
   color: var(--morado-neon);
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  font-size: 25px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #0d0b1a;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #nav-menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #nav-menu.active {
+    display: flex;
+  }
+}
+
 /* HERO */
 .hero {
   text-align: center;
@@ -145,6 +195,11 @@ footer {
   padding: 20px;
   background: #0a0914;
   color: var(--gris);
+}
+
+/* IMAGENES*/
+.icon-main {
+  height: 300px;
 }
 
 /* RESPONSIVE */

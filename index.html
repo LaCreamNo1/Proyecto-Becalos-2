@@ -2,64 +2,74 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi sitio elegante</title>
+    <title>IDEONIX</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/images/icono.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Encabezado principal -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="acerca.html">Sobre</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-        <h1>Bienvenido a mi sitio web</h1>
-        <p>Un espacio en construcción con estilo morado y dorado.</p>
-    </header>
 
-    <!-- Sección de contenido -->
-    <main>
-        <section id="sobre" class="card">
-            <h2>Sobre este proyecto</h2>
-            <p>Estoy creando una página web con un diseño elegante y moderno. 
-               La paleta morada y dorada le da un aire sofisticado.</p>
-            <button>Leer más</button>
-        </section>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">IDEONIX</div>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <section id="noticias" class="card">
-            <h2>Noticias</h2>
-            <p>Pronto encontrarás aquí actualizaciones y novedades.</p>
-            <button>Suscribirse</button>
-        </section>
+<!-- HERO -->
+<section class="hero">
+    <h1>IDEONIX</h1>
+    <h2>Donde la innovación toma forma</h2>
+    <p>Soluciones en ingeniería, diseño industrial, software y automatización.</p>
+    
+    <div class="cta">
+        <a href="#proyectos" class="btn">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-outline">Solicitar servicio</a>
+    </div>
+</section>
 
-        <section id="galeria" class="card">
-            <h2>Galería</h2>
-            <p>Una colección de imágenes que reflejan el estilo del sitio.</p>
-            <div class="gallery">
-                <img src="/images/img1.png" alt="Imagen elegante 1" height="200px">
-            </div>
-        </section>
+<!-- CONTENIDO -->
+<main>
 
-        <aside class="sidebar">
-            <h3>Enlaces útiles</h3>
-            <ul>
-                <li><a href="#">Recursos</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Foro</a></li>
-            </ul>
-        </aside>
-    </main>
+    <section id="servicios" class="card">
+        <h2>Servicios</h2>
+        <p>Desarrollo de software, diseño 3D, automatización con Arduino y soluciones tecnológicas.</p>
+    </section>
 
-    <!-- Pie de página -->
-    <center>
-    <footer>
-        <p>&copy; 2026 Mi sitio web. Todos los derechos reservados.</p>
-        <p><a href="contacto.html">Contacto</a> | <a href="#">Aviso legal</a></p>
-    </footer>
-    </center>
+    <section id="proyectos" class="card">
+        <h2>Proyectos</h2>
+        <p>Explora algunos de los trabajos realizados en impresión 3D, sistemas y prototipos.</p>
+        <button>Ver más</button>
+    </section>
+
+    <section id="galeria" class="card">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="/images/img1.png" alt="Proyecto 1" height="200px">
+        </div>
+    </section>
+
+    <aside class="sidebar">
+        <h3>Tecnologías</h3>
+        <ul>
+            <li>Arduino</li>
+            <li>Modelado 3D</li>
+            <li>Desarrollo Web</li>
+        </ul>
+    </aside>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 IDEONIX. Todos los derechos reservados.</p>
+    <p><a href="#contacto">Contacto</a></p>
+</footer>
+
 </body>
 </html>

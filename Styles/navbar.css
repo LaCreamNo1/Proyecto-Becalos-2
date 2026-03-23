@@ -1,0 +1,66 @@
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center; /* centra contenido interno */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  padding: 20px 40px; /* mejor margen lateral */
+
+  background: linear-gradient(to right, #0d0b1a, #1a1333);
+  backdrop-filter: blur(10px);
+}
+
+/* CONTENEDOR INTERNO (opcional pero pro) */
+.navbar .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* LOGO */
+.navbar .logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--blanco);
+}
+
+/* MENÚ */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* espacio equilibrado */
+  margin: 0;
+  padding: 0;
+}
+
+/* LINKS */
+.navbar a {
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 5px 8px; /* mejora área clickable */
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--morado-neon);
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  font-size: 25px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

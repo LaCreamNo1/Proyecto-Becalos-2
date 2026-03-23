@@ -1,0 +1,51 @@
+.footer {
+  background: #0a0914;
+  color: #cfcfcf;
+  padding: 40px 20px;
+}
+
+.foot-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#foot-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* títulos */
+.footer h3 {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+/* textos */
+.footer p {
+  margin: 5px 0;
+  font-size: 17px;
+}
+
+/* links */
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #8a2be2;
+}
+
+/* parte inferior */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #888;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 15px;
+}

@@ -1,88 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>IDEONIX</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/icono.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="Styles/Index.css">
 </head>
+
 <body>
+  <div class="login-container">
+    <img class="icono-usuario" src="images/usuario icono.jpg" alt="">
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm">
+      <input type="text" id="usuario" placeholder="Usuario" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <button type="submit">Entrar</button>
+    </form>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">IDEONIX</div>
+    <p id="mensaje"></p>
+    <button id="btnContinuar" style="display:none;"
+  onclick="window.location.href='inicio.html'">
+  Continuar
+</button>
+  </div>
 
-    <button class="menu-toggle" id="menu-toggle">
-        ☰
-    </button>
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // evita envío
 
-    <nav id="nav-menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#proyectos">Proyectos</a></li>
-            <li><a href="index.html#servicios">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+      const usuario = document.getElementById("usuario").value;
+      const password = document.getElementById("password").value;
+      const mensaje = document.getElementById("mensaje");
+      const boton = document.getElementById("btnContinuar");
 
-<!-- HERO -->
-<section class="hero">
-    <img src="images/icono.png" class="icon-main">
-    <h1>IDEONIX</h1>
-    <h2>Donde la innovación toma forma</h2>
-    <p>Soluciones en ingeniería, diseño industrial, software y automatización.</p>
-    
-    <div class="cta">
-        <a href="#proyectos" class="btn">Ver proyectos</a>
-        <a href="#contacto" class="btn btn-outline">Solicitar servicio</a>
-    </div>
-</section>
+      if (usuario === "sensei" && password === "1234") {
+        mensaje.style.color = "green";
+        mensaje.textContent = "Acceso correcto";
 
-<!-- CONTENIDO -->
-<main>
+        boton.style.display = "block";
+      } else {
+        mensaje.style.color = "red";
+        mensaje.textContent = "Usuario o contraseña incorrectos";
 
-    <section id="servicios" class="info">
-        <h2>IDEONIX – Donde la innovación toma forma</h2>
-        <p>Soluciones en ingeniería, diseño industrial, software y automatización al servicio de la industria y la educación.</p>
-    </section>
-    
-    <section id="servicios" class="card">
-        <h2>Servicios</h2>
-        <p>Desarrollo de software, diseño 3D, automatización con Arduino y soluciones tecnológicas.</p>
-    </section>
-
-    <section id="proyectos" class="card">
-        <h2>Proyectos</h2>
-        <p>Explora algunos de los trabajos realizados en impresión 3D, sistemas y prototipos.</p>
-        <button>Ver más</button>
-    </section>
-
-    <section id="galeria" class="card">
-        <h2>Galería</h2>
-        <div class="gallery">
-            <img src="/images/img1.png" alt="Proyecto 1" height="200px">
-        </div>
-    </section>
-
-    <aside class="sidebar">
-        <h3>Tecnologías</h3>
-        <ul>
-            <li>Arduino</li>
-            <li>Modelado 3D</li>
-            <li>Desarrollo Web</li>
-        </ul>
-    </aside>
-
-</main>
-
-<!-- FOOTER -->
-<footer>
-    <p>&copy; 2026 IDEONIX. Todos los derechos reservados.</p>
-    <p><a href="#contacto">Contacto</a></p>
-</footer>
-
-<script src="nav.js" defer></script>
+        boton.style.display = "none";
+      }
+    });
+  </script>
 
 </body>
+
 </html>

@@ -17,71 +17,6 @@ body {
   padding-top: 80px;
 }
 
-/* NAVBAR */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-
-  padding: 20px 40px; /* mejor margen lateral */
-
-  background: linear-gradient(to right, #0d0b1a, #1a1333);
-  backdrop-filter: blur(10px);
-}
-
-/* CONTENEDOR INTERNO (opcional pero pro) */
-.navbar .nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* LOGO */
-.navbar .logo {
-  font-weight: bold;
-  font-size: 20px;
-  color: var(--blanco);
-}
-
-/* MENÚ */
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 15px; /* espacio equilibrado */
-  margin: 0;
-  padding: 0;
-}
-
-/* LINKS */
-.navbar a {
-  color: var(--blanco);
-  text-decoration: none;
-  padding: 5px 8px; /* mejora área clickable */
-  transition: 0.3s;
-}
-
-.navbar a:hover {
-  color: var(--morado-neon);
-}
-
-/* BOTÓN HAMBURGUESA */
-.menu-toggle {
-  display: none;
-  font-size: 25px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
 
 /* MOBILE */
 @media (max-width: 768px) {
@@ -223,4 +158,75 @@ footer {
   .hero h1 {
     font-size: 40px;
   }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* TITULOS */
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #cfcfcf;
+  margin-bottom: 30px;
+}
+
+/* PROYECTOS */
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(138,43,226,0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(138,43,226,0.5);
+}
+
+/* CURSOS */
+.cursos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.curso-card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(138,43,226,0.3);
+  transition: 0.3s;
+}
+
+.curso-card h3 {
+  color: #ffd700;
+}
+
+.curso-card ul {
+  padding-left: 15px;
+}
+
+.curso-card p {
+  font-size: 14px;
+  color: #cfcfcf;
+}
+
+.curso-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(138,43,226,0.5);
 }

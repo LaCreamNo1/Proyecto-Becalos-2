@@ -3,46 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Noticias</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Styles/noticias.css">
 </head>
 <body>
-    <!-- Encabezado -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="acerca.html">Acerca</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-        <h1>Noticias</h1>
-    </header>
+
+
+    <!--HEADER-->
+<header class="navbar">
+    <!-- NAVBAR -->
+    <div id="navbar-container"></div>
+</header>
 
     <!-- Contenido principal -->
     <main>
-        <section class="card">
-            <h2>Próximas novedades</h2>
-            <p>
-                Por el momento no hay noticias disponibles, ya que esta página 
-                es parte de una prueba dentro del curso 
-                <strong>Bécalos – Introducción a la Programación</strong>.
-            </p>
-            <p>
-                Sin embargo, este espacio está reservado para futuras 
-                actualizaciones, proyectos y anuncios importantes. 
-                ¡Mantente atento a lo que vendrá!
-            </p>
-        </section>
-    </main>
+  <section class="card novedades">
+    <h2>Próximas novedades</h2>
 
-    <!-- Pie de página -->
-    <center>
-    <footer>
-        <p>&copy; 2026 Mi sitio web. Todos los derechos reservados.</p>
-        <p><a href="contacto.html">Contacto</a> | <a href="#">Aviso legal</a></p>
-    </footer>
-    </center>
+    <p class="intro">
+      Actualmente no hay actualizaciones disponibles. Este sitio forma parte de una práctica del programa 
+      <strong>Bécalos – Introducción a la Programación</strong>.
+    </p>
+
+    <p>
+      Este espacio está destinado a la publicación de futuros proyectos, mejoras y anuncios relevantes.
+    </p>
+
+    <p class="highlight">
+      Próximamente encontrarás contenido nuevo. Mantente atento.
+    </p>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div id="footer-container"></div>
+</footer>
+
+<script src="JavaScript/nav.js" defer></script>
+<script src="JavaScript/foot.js" defer></script>
 </body>
 </html>

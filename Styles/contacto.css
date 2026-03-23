@@ -181,35 +181,40 @@ footer {
 
 form {
   display: flex;
-  flex-direction: column; /* los pone en vertical */
-  gap: 12px;              /* espacio entre elementos */
-  width: 250px;           /* opcional */
+  flex-direction: column;
+  /* los pone en vertical */
+  gap: 12px;
+  /* espacio entre elementos */
+  width: 250px;
+  /* opcional */
 }
 
 .login-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centra horizontalmente */
+  align-items: center;
+  /* centra horizontalmente */
 }
 
-form input, textarea{
+form input,
+textarea {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 6px;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   color: white;
   outline: none;
 }
 
 button {
   display: inline-block;
-    background: var(--morado-neon);
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    margin: 5px;
-    transition: 0.3s;
-    
+  background: var(--morado-neon);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 5px;
+  transition: 0.3s;
+
 }

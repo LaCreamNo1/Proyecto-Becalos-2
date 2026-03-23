@@ -190,7 +190,7 @@ footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   border: none;
   color: white;
   font-size: 20px;
@@ -199,8 +199,13 @@ footer {
   border-radius: 50%;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
 
 .carousel button:hover {
   background: #8a2be2;

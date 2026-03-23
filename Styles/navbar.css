@@ -3,7 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  justify-content: center; /* centra contenido interno */
+  justify-content: center;
+  /* centra contenido interno */
 
   position: fixed;
   top: 0;
@@ -11,7 +12,8 @@
   width: 100%;
   z-index: 1000;
 
-  padding: 20px 40px; /* mejor margen lateral */
+  padding: 20px 40px;
+  /* mejor margen lateral */
 
   background: linear-gradient(to right, #0d0b1a, #1a1333);
   backdrop-filter: blur(10px);
@@ -38,7 +40,8 @@
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 15px; /* espacio equilibrado */
+  gap: 15px;
+  /* espacio equilibrado */
   margin: 0;
   padding: 0;
 }
@@ -47,7 +50,8 @@
 .navbar a {
   color: var(--blanco);
   text-decoration: none;
-  padding: 5px 8px; /* mejora área clickable */
+  padding: 5px 8px;
+  /* mejora área clickable */
   transition: 0.3s;
 }
 
